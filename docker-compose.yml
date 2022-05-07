@@ -14,7 +14,7 @@ services:
     volumes:
       - mongodb:/data/db
   dynamodb:
-    image: amazon/dynamodb_local
+    image: amazon/dynamodb-local
     container_name: dynamodb-taller
     restart: always
     ports:
