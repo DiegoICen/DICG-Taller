@@ -1,0 +1,23 @@
+version: '3.1'
+
+services:
+
+  mongo:
+    image: mongo
+    container_name: db-taller
+    restart: always
+    ports:
+      - 2707:2707
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    volumes:
+      - mongodb:/data/db
+  dynamodb:
+    image: amazon/dynamodb_local
+    container_name: dynamodb-taller
+    restart: always
+    ports:
+    - 8000:8000
+volumes:
+  mongodb:
