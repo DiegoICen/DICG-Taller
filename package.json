@@ -9,10 +9,13 @@
     "dynamodb": "^1.3.0",
     "express": "^4.17.3",
     "init-package-json": "^3.0.2",
+    "serverless-dynamodb-local": "^0.2.40",
     "serverless-http": "^3.0.1",
     "serverless-offline": "^8.5.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "serverless-plugin-include-dependencies": "^5.0.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
